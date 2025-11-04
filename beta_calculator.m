@@ -33,11 +33,12 @@ t_Cr = 0.015*10e-6;   % meters
 % m = 16000; % g      % mass of acs3 cubesat
 % m = 14000;          % cubesat bus min mass config
 m_camera = 40;
-m_panel = 289;
+m_panel = 4*289;
 m_ais = 375;
 m_comms = 52.85;
 m_battery = 335;
-m_avionics = m_camera + m_panel + m_ais + m_comms + m_battery;
+m_adcs = 1520;
+m_avionics = m_camera + m_panel + m_ais + m_comms + m_battery+m_adcs;
 
 m_bus = 800;
 m_deploy = 7700; % ACS3 Sail-Boom Subsystem
